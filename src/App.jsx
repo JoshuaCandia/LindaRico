@@ -19,7 +19,7 @@ function App() {
           <Route
             key={service.id}
             path={`/servicios${service.url}`}
-            element={<Services title={service.title} image={service.img} description={service.description} services={service.services} />}
+            element={<Services title={service.title} image={service.imgService} description={service.description} services={service.services} />}
           />
         ))}
       </Routes>
