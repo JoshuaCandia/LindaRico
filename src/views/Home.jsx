@@ -1,13 +1,16 @@
+//components
+import ContainerCards from '../components/ContainerCards/ContainerCards';
 import Header from '../components/Header/Header';
 import NavBar from '../components/NavBar/Navbar';
+import Slogan from '../components/Slogan/Slogan';
 const Home = () => {
   return (
     <div>
       <NavBar />
       <Header />
-      <main>
-        <div className='h-[91vh]  bg-yellow-500'></div>
-        <div className='h-screen  bg-blue-500'></div>
+      <main className='h-100% '>
+        <Slogan />
+        <ContainerCards />
       </main>
     </div>
   );
