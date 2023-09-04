@@ -3,7 +3,7 @@ import { BsArrowDownShort } from 'react-icons/bs';
 const ButtonDown = () => {
   const scrollDown = () => {
     const viewportHeight = window.innerHeight;
-    const scrollDistance = 0.98 * viewportHeight;
+    const scrollDistance = 0.91 * viewportHeight;
 
     window.scrollTo({
       top: scrollDistance,
