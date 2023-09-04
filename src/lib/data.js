@@ -1,4 +1,8 @@
+//assets
 import protector from '../assets/protector-auditivo.jpg';
+import medioAmbiente from '../assets/medio-ambiente.jpg';
+import prevencionIncendios from '../assets/prevencion-incendios.jpg';
+import habilitaciones from '../assets/habilitaciones.jpg';
 
 export const services = [
   {
@@ -11,22 +15,22 @@ export const services = [
   {
     id: 2,
     url: '/area-medio-ambiente',
-    img: protector,
+    img: medioAmbiente,
     title: 'Área Medio Ambiente',
-    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    id: 3,
-    url: '/prevencion-de-incendios',
-    img: protector,
-    title: 'Prevención de Incendios',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
     id: 4,
     url: '/habilitaciones',
-    img: protector,
+    img: habilitaciones,
     title: 'Habilitaciones',
+    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    id: 3,
+    url: '/prevencion-de-incendios',
+    img: prevencionIncendios,
+    title: 'Prevención de Incendios',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
