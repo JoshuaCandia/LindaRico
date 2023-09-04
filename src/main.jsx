@@ -1,13 +1,19 @@
+//styles
 import './index.css';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+//components
 import App from './App.jsx';
+//hooks
+import ReactDOM from 'react-dom/client';
+import React from 'react';
 import { NextUIProvider } from '@nextui-org/react';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <NextUIProvider>
-      <App />
-    </NextUIProvider>
+    <BrowserRouter>
+      <NextUIProvider>
+        <App />
+      </NextUIProvider>
+    </BrowserRouter>
   </React.StrictMode>,
 );
