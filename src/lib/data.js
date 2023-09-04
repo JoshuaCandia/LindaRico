@@ -1,56 +1,92 @@
-//assets
-import protector from '../assets/protector-auditivo.jpg';
-import medioAmbiente from '../assets/medio-ambiente.jpg';
-import prevencionIncendios from '../assets/prevencion-incendios.jpg';
-import habilitaciones from '../assets/habilitaciones.jpg';
-
 export const services = [
   {
     id: 1,
     url: '/higiene-y-seguridad',
-    img: protector,
+    img: '../src/assets/protector-auditivo.jpg',
     title: 'Higiene y Seguridad',
-    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    component: 'HigieneYSeguridad',
+    description:
+      '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?',
+    services: [
+      {id:1, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+      { id:2, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+      {id: 3, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+      { id: 4,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+      { id: 5,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+    ],
   },
   {
     id: 2,
     url: '/area-medio-ambiente',
-    img: medioAmbiente,
-    title: 'Área Medio Ambiente',
-    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    component: 'MedioAmbiente',
-  },
-  {
-    id: 4,
-    url: '/habilitaciones',
-    img: habilitaciones,
-    title: 'Habilitaciones',
-    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    component: 'Habilitaciones',
+    img: '../src/assets/medio-ambiente.jpg',
+    title: 'Medio Ambiente',
+    description:
+      '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?',
+      services: [
+        {id:1, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id:2, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        {id: 3, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 4,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 5,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+      ],
   },
   {
     id: 3,
+    url: '/habilitaciones',
+    img: '../src/assets/habilitaciones.jpg',
+    title: 'Habilitaciones',
+    description:
+      '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?',
+      services: [
+        {id:1, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id:2, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        {id: 3, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 4,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 5,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+      ],
+  },
+  {
+    id: 4,
     url: '/prevencion-de-incendios',
-    img: prevencionIncendios,
+    img: '../src/assets/prevencion-incendios.jpg',
     title: 'Prevención de Incendios',
-    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    component: 'HigieneYSeguridad',
+    description:
+      '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?',
+      services: [
+        {id:1, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id:2, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        {id: 3, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 4,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 5,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+      ],
   },
   {
     id: 5,
     url: '/estudios-evaluaciones',
-    img: protector,
+    img: '../src/assets/protector-auditivo.jpg',
     title: 'Estudios & Evaluaciones',
-    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    component: 'EstudiosEvaluaciones',
+    description:
+      '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?',
+      services: [
+        {id:1, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id:2, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        {id: 3, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 4,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 5,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+      ],
   },
   {
     id: 6,
     url: '/construccion',
-    img: protector,
+    img: '../src/assets/protector-auditivo.jpg',
     title: 'Área Construcción',
-    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    component: 'Construccion',
+    description:
+      '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?',
+      services: [
+        {id:1, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id:2, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        {id: 3, msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 4,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+        { id: 5,msg: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' },
+      ],
   },
 ];

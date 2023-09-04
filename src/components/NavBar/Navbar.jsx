@@ -10,9 +10,10 @@ import {
   NavbarMenuItem,
 } from '@nextui-org/react';
 
-import { BiHomeAlt2, BiExitFullscreen } from 'react-icons/bi';
+import { BiHomeAlt2 } from 'react-icons/bi';
 import { RiContactsLine } from 'react-icons/ri';
 import { SiCountingworkspro } from 'react-icons/si';
+import DropDownNav from './DropDownNav';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,14 +52,7 @@ const NavBar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link
-            href='/servicios'
-            aria-current='page'
-            color='foreground'
-            className='text-[24px]'
-          >
-            Servicios
-          </Link>
+          <DropDownNav />
         </NavbarItem>
         <NavbarItem>
           <Link color='foreground' href='/contacto' className='text-[24px]'>
@@ -76,12 +70,7 @@ const NavBar = () => {
               <p>Inicio</p>
             </div>
           </Link>
-          <Link className='w-full text-[22px]' href='/servicios' size='lg'>
-            <div className='flex items-center gap-4'>
-              <BiExitFullscreen />
-              <p>Servicios</p>
-            </div>
-          </Link>
+          <DropDownNav />
           <Link className='w-full text-[22px]' href='/contacto' size='lg'>
             <div className='flex items-center gap-4'>
               <RiContactsLine />
