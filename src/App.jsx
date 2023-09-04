@@ -1,9 +1,16 @@
+//styles
 import './App.css';
+//hooks
+import { Routes, Route } from 'react-router-dom';
+//views
+import Home from './views/Home';
 
 function App() {
   return (
     <div>
-      <h1 className='text-3xl font-bold underline'>Linda Rico</h1>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </div>
   );
 }
