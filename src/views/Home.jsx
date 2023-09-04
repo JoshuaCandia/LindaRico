@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <NavBar />
       <Header />
-      <main className='h-100% '>
+      <main>
         <Slogan />
         <ContainerCards />
       </main>

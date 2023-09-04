@@ -1,38 +1,56 @@
+//assets
+import protector from '../assets/protector-auditivo.jpg';
+import medioAmbiente from '../assets/medio-ambiente.jpg';
+import prevencionIncendios from '../assets/prevencion-incendios.jpg';
+import habilitaciones from '../assets/habilitaciones.jpg';
+
 export const services = [
   {
     id: 1,
-    img: '/images/1.png',
+    url: '/higiene-y-seguridad',
+    img: protector,
     title: 'Higiene y Seguridad',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'HigieneYSeguridad',
   },
   {
     id: 2,
-    img: '/images/1.png',
+    url: '/area-medio-ambiente',
+    img: medioAmbiente,
     title: 'Área Medio Ambiente',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    id: 3,
-    img: '/images/1.png',
-    title: 'Prevención de Incendios',
-    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'MedioAmbiente',
   },
   {
     id: 4,
-    img: '/images/1.png',
+    url: '/habilitaciones',
+    img: habilitaciones,
     title: 'Habilitaciones',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'Habilitaciones',
+  },
+  {
+    id: 3,
+    url: '/prevencion-de-incendios',
+    img: prevencionIncendios,
+    title: 'Prevención de Incendios',
+    subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'HigieneYSeguridad',
   },
   {
     id: 5,
-    img: '/images/1.png',
+    url: '/estudios-evaluaciones',
+    img: protector,
     title: 'Estudios & Evaluaciones',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'EstudiosEvaluaciones',
   },
   {
     id: 6,
-    img: '/images/1.png',
+    url: '/construccion',
+    img: protector,
     title: 'Área Construcción',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'Construccion',
   },
 ];
