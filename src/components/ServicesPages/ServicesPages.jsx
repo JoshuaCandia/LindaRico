@@ -5,7 +5,10 @@ const ServicesPages = ({ title, image, description, services }) => {
   return (
     <main>
       <div
-        className={`bg-[url('${image}')] h-[300px] bg-[length:600px] bg-no-repeat bg-fixed flex flex-col justify-center items-center gap-7 `}
+        className={` h-[300px] bg-[length:600px] bg-no-repeat bg-fixed flex flex-col justify-center items-center gap-7 `}
+        style={{
+          backgroundImage: `url(${image})`,
+        }}
       >
         <h1 className='text-3xl font-bold text-white'>{title}</h1>
         <ButtonContact />
@@ -20,13 +23,14 @@ const ServicesPages = ({ title, image, description, services }) => {
           <h2 className='text-4xl mb-7'>Servicios</h2>
 
           <ul className='flex flex-col items-center justify-center mb-4 gap-4'>
-            
-          {services.map(service =>  <li key={service.id}>
-              <div className='flex gap-2 items-center'>
-                <BiCheck className='text-[32px]' />
-                <p>{service.msg}</p>
-              </div>
-            </li>)}
+            {services.map((service) => (
+              <li key={service.id}>
+                <div className='flex gap-2 items-center'>
+                  <BiCheck className='text-[32px]' />
+                  <p>{service.msg}</p>
+                </div>
+              </li>
+            ))}
           </ul>
         </article>
       </section>
