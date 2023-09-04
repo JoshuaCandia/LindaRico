@@ -12,7 +12,7 @@ const ButtonDown = () => {
   };
   return (
     <button onClick={scrollDown} className='mb-6 cursor-pointer'>
-      <BsArrowDownShort className='text-neutral-800 animate-bounce' size={50} />
+      <BsArrowDownShort className='text-white animate-bounce' size={50} />
     </button>
   );
 };
