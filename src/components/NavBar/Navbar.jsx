@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Navbar,
   NavbarBrand,
@@ -9,50 +10,83 @@ import {
   NavbarMenuItem,
 } from '@nextui-org/react';
 
+import { BiHomeAlt2, BiExitFullscreen } from 'react-icons/bi';
+import { RiContactsLine } from 'react-icons/ri';
+import { SiCountingworkspro } from 'react-icons/si';
+
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <Navbar disableAnimation isBordered>
+    <Navbar
+      disableAnimation
+      className='bg-white border-none sm:h-[100px]'
+      isBlurred={false}
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+    >
       <NavbarContent className='sm:hidden' justify='start'>
         <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarContent className='sm:hidden pr-3' justify='center'>
         <NavbarBrand>
-          <p className='font-bold text-inherit'>Linda Rico</p>
+          <div className='flex items-center gap-2'>
+            <SiCountingworkspro className='text-[27px]' />
+            <p className='font-bold text-[24px]'>Linda Rico</p>
+          </div>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className='hidden sm:flex gap-4' justify='center'>
+      {/* NAVBAR PC */}
+      <NavbarContent className='hidden gap-4 sm:flex ' justify='start'>
         <NavbarBrand>
-          <p className='font-bold text-inherit'>Linda Rico</p>
+          <div className='flex items-center gap-4'>
+            <SiCountingworkspro className='text-[32px]' />
+            <p className='font-bold text-[32px]'>Linda Rico</p>
+          </div>
         </NavbarBrand>
         <NavbarItem>
-          <Link color='foreground' href='/inicio'>
+          <Link color='foreground' href='/' className='text-[24px]'>
             Inicio
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href='/servicios' aria-current='page' color='foreground'>
+        <NavbarItem>
+          <Link
+            href='/servicios'
+            aria-current='page'
+            color='foreground'
+            className='text-[24px]'
+          >
             Servicios
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color='foreground' href='/contacto'>
+          <Link color='foreground' href='/contacto' className='text-[24px]'>
             Contacto
           </Link>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
-        <NavbarMenuItem>
-          <Link className='w-full' href='/inicio' size='lg'>
-            Inicio
+      {/* NAVBAR MOBILE */}
+      <NavbarMenu className='bg-white h-36 '>
+        <NavbarMenuItem className='flex flex-col gap-2'>
+          <Link className='w-full text-[22px]' href='/' size='lg'>
+            <div className='flex items-center gap-4'>
+              <BiHomeAlt2 />
+              <p>Inicio</p>
+            </div>
           </Link>
-          <Link className='w-full' href='/servicios' size='lg'>
-            Servicios
+          <Link className='w-full text-[22px]' href='/servicios' size='lg'>
+            <div className='flex items-center gap-4'>
+              <BiExitFullscreen />
+              <p>Servicios</p>
+            </div>
           </Link>
-          <Link className='w-full' href='/contacto' size='lg'>
-            Contacto
+          <Link className='w-full text-[22px]' href='/contacto' size='lg'>
+            <div className='flex items-center gap-4'>
+              <RiContactsLine />
+              <p>Contacto</p>
+            </div>
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>
