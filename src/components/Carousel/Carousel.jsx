@@ -7,6 +7,15 @@ import { Carousel, Typography, Button } from '@material-tailwind/react';
 import ButtonDown from '../Buttons/ButtonDown';
 
 const CarouselHeader = () => {
+  function smooth() {
+    const section = document.getElementById('servicios');
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
   return (
     <Carousel
       autoplay='true'
@@ -40,7 +49,7 @@ const CarouselHeader = () => {
               Expertos en Seguridad e Higiene
             </Typography>
             <div className='flex gap-2'>
-              <Button size='md' color='white'>
+              <Button onClick={() => smooth()} size='md' color='white'>
                 Servicios
               </Button>
             </div>
@@ -75,7 +84,7 @@ const CarouselHeader = () => {
               </div>
             </Typography>
             <div className='flex gap-2'>
-              <Button size='md' color='white'>
+              <Button onClick={() => smooth()} size='md' color='white'>
                 Servicios
               </Button>
             </div>

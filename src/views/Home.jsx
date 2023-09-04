@@ -10,7 +10,10 @@ const Home = () => {
       <Header />
       <main>
         <Slogan />
-        <div className='mt-12 bg-blue-gray-600 flex flex-col justify-center items-center'>
+        <div
+          id='servicios'
+          className='mt-12 pt-12 bg-blue-gray-600 flex flex-col justify-center items-center'
+        >
           <h3 className='text-2xl p-6 text-white font-bold'>
             Servicios Destacados
           </h3>
