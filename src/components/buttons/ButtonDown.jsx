@@ -1,5 +1,5 @@
 import { BsArrowDownShort } from 'react-icons/bs';
-import { Button } from '@nextui-org/react';
+
 const ButtonDown = () => {
   const scrollDown = () => {
     window.scrollTo({
@@ -8,9 +8,9 @@ const ButtonDown = () => {
     });
   };
   return (
-    <Button className='rounded-xl' onClick={scrollDown}>
-      <BsArrowDownShort color='white' size={50} />
-    </Button>
+    <button onClick={scrollDown} className='cursor-pointer'>
+      <BsArrowDownShort className='text-neutral-800 animate-bounce' size={50} />
+    </button>
   );
 };
 
