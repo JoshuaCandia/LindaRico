@@ -11,6 +11,7 @@ export const services = [
     img: protector,
     title: 'Higiene y Seguridad',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'HigieneYSeguridad',
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const services = [
     img: medioAmbiente,
     title: 'Área Medio Ambiente',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'MedioAmbiente',
   },
   {
     id: 4,
@@ -25,6 +27,7 @@ export const services = [
     img: habilitaciones,
     title: 'Habilitaciones',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'Habilitaciones',
   },
   {
     id: 3,
@@ -32,6 +35,7 @@ export const services = [
     img: prevencionIncendios,
     title: 'Prevención de Incendios',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'HigieneYSeguridad',
   },
   {
     id: 5,
@@ -39,6 +43,7 @@ export const services = [
     img: protector,
     title: 'Estudios & Evaluaciones',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'EstudiosEvaluaciones',
   },
   {
     id: 6,
@@ -46,5 +51,6 @@ export const services = [
     img: protector,
     title: 'Área Construcción',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    component: 'Construccion',
   },
 ];
