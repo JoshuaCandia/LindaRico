@@ -2,7 +2,9 @@
 import protector from '../assets/protector-auditivo.jpg';
 import medioAmbiente from '../assets/medio-ambiente.jpg';
 import prevencionIncendios from '../assets/prevencion-incendios.jpg';
-import habilitaciones from '../assets/habilitaciones.jpg';
+import habilitaciones from '../assets/mujer-plano.jpg';
+import estudiosEvaluaciones from '../assets/mujer-notebook.jpg';
+import areaConstruccion from '../assets/hombres-carpeta.jpg';
 
 export const services = [
   {
@@ -40,7 +42,7 @@ export const services = [
   {
     id: 5,
     url: '/estudios-evaluaciones',
-    img: protector,
+    img: estudiosEvaluaciones,
     title: 'Estudios & Evaluaciones',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     component: 'EstudiosEvaluaciones',
@@ -48,7 +50,7 @@ export const services = [
   {
     id: 6,
     url: '/construccion',
-    img: protector,
+    img: areaConstruccion,
     title: 'Área Construcción',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     component: 'Construccion',
