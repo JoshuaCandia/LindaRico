@@ -1,10 +1,16 @@
+//styles
 import './App.css';
-import NavBar from './components/NavBar/Navbar';
+//hooks
+import { Routes, Route } from 'react-router-dom';
+//views
+import Home from './views/Home';
+
 function App() {
   return (
     <div>
-      <NavBar/>
-      <h1 className='text-3xl font-bold underline'>Linda Rico</h1>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </div>
   );
 }
