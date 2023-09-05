@@ -8,22 +8,32 @@ import NavBar from './components/NavBar/Navbar';
 import { services } from './lib/data';
 import Services from './views/Services';
 import Footer from './components/Footer/Footer';
+import Contacto from './views/Contacto';
 
 function App() {
   return (
-    <div>
+    <div className='font-customFontRoboto'>
       <NavBar />
       <Routes>
+        <Route path='*' element={<Home />} />
         <Route path='/' element={<Home />} />
         {services.map((service) => (
           <Route
             key={service.id}
             path={`/servicios${service.url}`}
-            element={<Services title={service.title} image={service.imgService} description={service.description} services={service.services} />}
+            element={
+              <Services
+                title={service.title}
+                image={service.imgService}
+                description={service.description}
+                services={service.services}
+              />
+            }
           />
         ))}
+        <Route path='/contacto' element={<Contacto />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
