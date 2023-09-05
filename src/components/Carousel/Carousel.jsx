@@ -1,10 +1,10 @@
+//components
+import ButtonArrowDown from '../Buttons/ButtonArrowDown.jsx';
+//hooks
+import { Carousel, Typography, Button } from '@material-tailwind/react';
 //assets
 import hombresTrabajando from '../../assets/hombres-trabajando.jpg';
 import habilitaciones from '../../assets/habilitaciones.jpg';
-//hooks
-import { Carousel, Typography, Button } from '@material-tailwind/react';
-//components
-import ButtonArrowDown from '../Buttons/ButtonArrowDown.jsx';
 
 const CarouselHeader = () => {
   function smooth() {
