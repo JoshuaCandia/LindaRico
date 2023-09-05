@@ -1,6 +1,6 @@
 //assets
-import protector from '../assets/protector-auditivo.jpg';
-import medioAmbiente from '../assets/medio-ambiente.jpg';
+import protector from '../assets/higiene-seguridad.jpg';
+import medioAmbiente from '../assets/mundo.jpg';
 import prevencionIncendios from '../assets/prevencion-incendios.jpg';
 import habilitaciones from '../assets/mujer-plano.jpg';
 import estudiosEvaluaciones from '../assets/mujer-notebook.jpg';
