@@ -4,7 +4,7 @@ import habilitaciones from '../../assets/habilitaciones.jpg';
 //hooks
 import { Carousel, Typography, Button } from '@material-tailwind/react';
 //components
-import ButtonArrowDown from '../Buttons/ButtonArrowDown';
+import ButtonArrowDown from '../Buttons/ButtonArrowDown.jsx';
 
 const CarouselHeader = () => {
   function smooth() {
