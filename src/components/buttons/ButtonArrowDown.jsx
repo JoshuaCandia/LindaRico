@@ -1,6 +1,6 @@
 import { BsArrowDownShort } from 'react-icons/bs';
 
-const ButtonDown = () => {
+const ButtonArrowDown = () => {
   const scrollDown = () => {
     const viewportHeight = window.innerHeight;
     const scrollDistance = 0.91 * viewportHeight;
@@ -17,4 +17,4 @@ const ButtonDown = () => {
   );
 };
 
-export default ButtonDown;
+export default ButtonArrowDown;

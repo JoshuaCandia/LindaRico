@@ -4,7 +4,7 @@ import habilitaciones from '../../assets/habilitaciones.jpg';
 //hooks
 import { Carousel, Typography, Button } from '@material-tailwind/react';
 //components
-import ButtonDown from '../Buttons/ButtonDown';
+import ButtonArrowDown from '../Buttons/ButtonArrowDown';
 
 const CarouselHeader = () => {
   function smooth() {
@@ -55,7 +55,7 @@ const CarouselHeader = () => {
             </div>
           </div>
           <div className='w-full flex justify-center'>
-            <ButtonDown />
+            <ButtonArrowDown />
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@ const CarouselHeader = () => {
             </div>
           </div>
           <div className='w-full flex justify-center'>
-            <ButtonDown />
+            <ButtonArrowDown />
           </div>
         </div>
       </div>
