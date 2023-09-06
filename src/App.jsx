@@ -14,7 +14,7 @@ import ButtonWhatsApp from './components/Buttons/ButtonWhatsApp';
 
 function App() {
   return (
-    <div className='font-customFontRoboto'>
+    <div className='font-customFontRoboto '>
       <NavBar />
       <ButtonArrowUp />
       <ButtonWhatsApp />
