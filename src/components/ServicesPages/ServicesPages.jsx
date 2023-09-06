@@ -1,5 +1,5 @@
-import ButtonContact from '../buttons/ButtonContact';
-import { BiCheck } from 'react-icons/bi';
+import ButtonContact from '../buttons/ButtonContact'
+import { BiCheck } from 'react-icons/bi'
 
 const ServicesPages = ({ title, image, description, services }) => {
   return (
@@ -95,7 +95,7 @@ const ServicesPages = ({ title, image, description, services }) => {
         </article>
       </section>
     </main>
-  );
-};
+  )
+}
 
-export default ServicesPages;
+export default ServicesPages

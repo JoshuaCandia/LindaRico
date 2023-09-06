@@ -1,6 +1,6 @@
 //assets
-import protector from '../assets/higiene-seguridad.jpg';
-import medioAmbiente from '../assets/mundo.jpg';
+import protector from '../assets/higiene-seguridad.jpg'
+import medioAmbiente from '../assets/mundo.jpg'
 
 export const services = [
   {
@@ -109,4 +109,4 @@ export const services = [
       },
     ],
   },
-];
+]

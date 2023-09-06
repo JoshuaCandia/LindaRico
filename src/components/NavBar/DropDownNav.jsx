@@ -5,15 +5,15 @@ import {
   DropdownMenu,
   DropdownItem,
   Button,
-} from '@nextui-org/react';
-import { BiExitFullscreen } from 'react-icons/bi';
-import { RiArrowDropDownLine } from 'react-icons/ri';
-import { services } from '../../lib/data';
-import { Link } from 'react-router-dom';
+} from '@nextui-org/react'
+import { BiExitFullscreen } from 'react-icons/bi'
+import { RiArrowDropDownLine } from 'react-icons/ri'
+import { services } from '../../lib/data'
+import { Link } from 'react-router-dom'
 
 const DropDownNav = () => {
   return (
-    <Dropdown >
+    <Dropdown>
       <NavbarItem>
         <DropdownTrigger>
           <Button
@@ -42,7 +42,7 @@ const DropDownNav = () => {
         ))}
       </DropdownMenu>
     </Dropdown>
-  );
-};
+  )
+}
 
-export default DropDownNav;
+export default DropDownNav

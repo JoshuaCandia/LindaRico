@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import {
   Navbar,
   NavbarBrand,
@@ -8,15 +8,15 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-} from '@nextui-org/react';
+} from '@nextui-org/react'
 
-import { BiHomeAlt2 } from 'react-icons/bi';
-import { RiContactsLine } from 'react-icons/ri';
-import { SiCountingworkspro } from 'react-icons/si';
-import DropDownNav from './DropDownNav';
+import { BiHomeAlt2 } from 'react-icons/bi'
+import { RiContactsLine } from 'react-icons/ri'
+import { SiCountingworkspro } from 'react-icons/si'
+import DropDownNav from './DropDownNav'
 
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <Navbar
       disableAnimation
@@ -80,7 +80,7 @@ const NavBar = () => {
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

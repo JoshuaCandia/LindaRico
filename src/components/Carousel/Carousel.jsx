@@ -1,19 +1,19 @@
 //components
-import ButtonArrowDown from '../Buttons/ButtonArrowDown.jsx';
+import ButtonArrowDown from '../Buttons/ButtonArrowDown.jsx'
 //hooks
-import { Carousel, Typography, Button } from '@material-tailwind/react';
+import { Carousel, Typography, Button } from '@material-tailwind/react'
 //assets
-import hombresTrabajando from '../../assets/hombres-carpeta.jpg';
-import habilitaciones from '../../assets/mujer-plano.jpg';
+import hombresTrabajando from '../../assets/hombres-carpeta.jpg'
+import habilitaciones from '../../assets/mujer-plano.jpg'
 
 const CarouselHeader = () => {
   function smooth() {
-    const section = document.getElementById('servicios');
+    const section = document.getElementById('servicios')
     if (section) {
       section.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
-      });
+      })
     }
   }
   return (
@@ -95,7 +95,7 @@ const CarouselHeader = () => {
         </div>
       </div>
     </Carousel>
-  );
-};
+  )
+}
 
-export default CarouselHeader;
+export default CarouselHeader
