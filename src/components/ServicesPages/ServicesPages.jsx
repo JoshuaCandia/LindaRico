@@ -4,8 +4,9 @@ import { BiCheck } from 'react-icons/bi';
 const ServicesPages = ({ title, image, description, services }) => {
   return (
     <main>
+      {/* IMAGEN MAIN DE LA PAGINA */}
       <div
-        className={` h-[300px] bg-[length:600px] w-full bg-no-repeat bg-fixed  flex flex-col justify-center items-center gap-7 sm:bg-[length:100%] xl:bg-[length:100%] xl:h-[400px] xl:bg-bottom `}
+        className={` h-[300px] bg-[length:600px] w-full bg-no-repeat bg-fixed  flex flex-col justify-center items-center gap-7 sm:bg-[length:100%] xl:bg-[length:100%]  xl:h-[400px] `}
         style={{
           backgroundImage: `url(${image})`,
         }}
@@ -15,34 +16,64 @@ const ServicesPages = ({ title, image, description, services }) => {
         </h1>
         <ButtonContact />
       </div>
+
+      {/* UN POCO DE DESCRIPCION  */}
       <section className='xl:flex xl:justify-center'>
-        <article className='px-7 pt-7 font-light xl:w-[900px] xl:text-xl fonts-customFontRoboto'>
+        <article className='px-7 p-24 font-light xl:w-[900px] xl:text-xl fonts-customFontRoboto '>
           <p>{description}</p>
         </article>
       </section>
-      <section className='bg-BlueSemiLight mt-7 text-white'>
-        <article className='p-7 font-light flex flex-col justify-center items-center'>
-          <h2 className='text-4xl mb-7 font-customFontInter'>Servicios</h2>
 
-          <ul className='flex flex-col items-center justify-center mb-4 gap-4 fonts-customFontRoboto  xl:text-xl'>
-            {services.map((service) => (
-              <li key={service.id}>
-                <div className='flex gap-2 items-center'>
-                  <BiCheck className='text-[32px]' />
-                  <p>{service.msg}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+      {/* LISTAS CON LOS SERVICIOS */}
+      <section className='bg-BlueSemiLight mt-7 text-white flex justify-center  '>
+        <article className='p-7 font-light flex flex-col justify-center items-center '>
+          <h2 className='text-4xl mb-7 font-customFontInter'>Servicios</h2>
+          <div className='flex flex-col  xl:flex-row xl:gap-7 xl:p-7'>
+            <ul className='flex flex-col mb-4  fonts-customFontRoboto gap-7  xl:text-md '>
+              {services.map((service) =>
+                service.id <= 7 ? (
+                  <li key={service.id}>
+                    <div className='flex gap-4 items-center'>
+                      <div>
+                        <BiCheck className='text-3xl' />
+                      </div>
+                      <p>{service.msg}</p>
+                    </div>
+                  </li>
+                ) : null,
+              )}
+            </ul>
+
+            {services.length > 7 && (
+              <ul className='flex flex-col mb-4 items-start fonts-customFontRoboto gap-7 xl:text-md '>
+                {services.map((service) =>
+                  service.id <= 7 ? (
+                    <li key={service.id}>
+                      <div className='flex gap-4 items-center'>
+                        <div>
+                          <BiCheck className=' text-3xl' />
+                        </div>
+
+                        <p>{service.msg}</p>
+                      </div>
+                    </li>
+                  ) : null,
+                )}
+              </ul>
+            )}
+          </div>
         </article>
       </section>
+
+      {/* IMAGEN DE DICHO SERVICIO / DECORACION */}
       <div
-        className={` h-[300px] bg-[length:500px]  w-full bg-no-repeat   flex flex-col justify-center items-center gap-7 sm:bg-contain xl:bg-[length:100%] xl:h-[400px] xl:bg-center `}
+        className={` h-[300px] bg-[length:500px]  w-full bg-no-repeat   flex flex-col justify-center items-center gap-7 sm:bg-[length:100%]  xl:h-[400px] xl:bg-center `}
         style={{
           backgroundImage: `url(${image})`,
         }}
       ></div>
 
+      {/* DE QUE TRATA EL SERVICIO */}
       <section className='flex justify-center bg-gradient-to-r from-BlueLight to-BlueSemiDark text-white'>
         <article className='p-7 font-light flex flex-col justify-center items-center xl:w-[900px]'>
           <h2 className='text-4xl mb-7 font-customFontInter'>
