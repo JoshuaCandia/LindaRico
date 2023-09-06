@@ -1,6 +1,6 @@
-import { BsWhatsapp } from 'react-icons/bs';
-import { BsFillTelephoneFill } from 'react-icons/bs';
-import { AiTwotoneMail } from 'react-icons/ai';
+import { BsWhatsapp } from 'react-icons/bs'
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import { AiTwotoneMail } from 'react-icons/ai'
 const ContactContainerCards = () => {
   return (
     <div className='flex items-center py-7 justify-center flex-wrap gap-12 2xl:h-[500px] bg-gradient-to-r from-BlueLight to-BlueSemiDark w-full'>
@@ -40,7 +40,7 @@ const ContactContainerCards = () => {
         </article>
       </a>
     </div>
-  );
-};
+  )
+}
 
-export default ContactContainerCards;
+export default ContactContainerCards

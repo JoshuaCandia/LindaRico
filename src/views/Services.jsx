@@ -1,4 +1,4 @@
-import ServicesPages from '../components/ServicesPages/ServicesPages';
+import ServicesPages from '../components/ServicesPages/ServicesPages'
 
 const Services = ({ title, image, description, services }) => {
   return (
@@ -8,7 +8,7 @@ const Services = ({ title, image, description, services }) => {
       description={description}
       services={services}
     />
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

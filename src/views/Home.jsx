@@ -1,7 +1,7 @@
 //components
-import ContainerCards from '../components/ContainerCards/ContainerCards';
-import Header from '../components/Header/Header';
-import Slogan from '../components/Slogan/Slogan';
+import ContainerCards from '../components/ContainerCards/ContainerCards'
+import Header from '../components/Header/Header'
+import Slogan from '../components/Slogan/Slogan'
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
         </div>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

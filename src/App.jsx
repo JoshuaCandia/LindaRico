@@ -1,16 +1,16 @@
 //styles
-import './App.css';
+import './App.css'
 //hooks
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'
 //views
-import Home from './views/Home';
-import NavBar from './components/NavBar/Navbar';
-import { services } from './lib/data';
-import Services from './views/Services';
-import Footer from './components/Footer/Footer';
-import Contacto from './views/Contacto';
-import ButtonArrowUp from './components/Buttons/ButtonArrowUp';
-import ButtonWhatsApp from './components/Buttons/ButtonWhatsApp';
+import Home from './views/Home'
+import NavBar from './components/NavBar/Navbar'
+import { services } from './lib/data'
+import Services from './views/Services'
+import Footer from './components/Footer/Footer'
+import Contacto from './views/Contacto'
+import ButtonArrowUp from './components/Buttons/ButtonArrowUp'
+import ButtonWhatsApp from './components/Buttons/ButtonWhatsApp'
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
       </Routes>
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

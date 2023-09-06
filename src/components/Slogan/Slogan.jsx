@@ -1,7 +1,7 @@
-import { Button } from '@nextui-org/react';
-import { useNavigate } from 'react-router-dom';
+import { Button } from '@nextui-org/react'
+import { useNavigate } from 'react-router-dom'
 const Slogan = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   return (
     <div className='pt-8 bg-BlueSemiLight text-white py-8 flex flex-col items-center'>
       <div>
@@ -28,7 +28,7 @@ const Slogan = () => {
         Conocer más
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default Slogan;
+export default Slogan

@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html{
-    height: 100%;
-    user-select: none;
+html {
+  height: 100%;
+  user-select: none;
 }
-body{
-    height: 100%;
+body {
+  height: 100%;
 }

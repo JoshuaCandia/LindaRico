@@ -1,9 +1,9 @@
 //hooks
-import { Card, CardHeader, Image } from '@nextui-org/react';
-import { Link } from 'react-router-dom';
+import { Card, CardHeader, Image } from '@nextui-org/react'
+import { Link } from 'react-router-dom'
 
 const Cards = ({ url, img, title, subTitle }) => {
-  console.log(url);
+  console.log(url)
   return (
     <Link to={url}>
       <Card className='rounded-md col-span-12 sm:col-span-4 h-[250px]'>
@@ -21,7 +21,7 @@ const Cards = ({ url, img, title, subTitle }) => {
         />
       </Card>
     </Link>
-  );
-};
+  )
+}
 
-export default Cards;
+export default Cards

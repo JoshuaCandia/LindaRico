@@ -1,9 +1,9 @@
 //assets
 
 //
-import { services } from '../../lib/data';
+import { services } from '../../lib/data'
 //components
-import Cards from '../Cards/Cards';
+import Cards from '../Cards/Cards'
 
 const ContainerCards = () => {
   return (
@@ -20,7 +20,7 @@ const ContainerCards = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContainerCards;
+export default ContainerCards
