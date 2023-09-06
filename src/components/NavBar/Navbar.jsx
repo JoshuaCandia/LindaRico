@@ -33,7 +33,7 @@ const NavBar = () => {
         <NavbarBrand>
           <div className='flex items-center gap-2'>
             <SiCountingworkspro className='text-[27px]' />
-            <p className='font-bold text-[24px]'>Linda Rico</p>
+            <p className='font-bold text-[24px]'>ALR</p>
           </div>
         </NavbarBrand>
       </NavbarContent>
