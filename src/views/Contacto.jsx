@@ -2,11 +2,19 @@ import ContactContainerCards from '../components/ContainerCards/ContactContainer
 
 const Contacto = () => {
   return (
-    <div className='h-full flex flex-col items-center gap-8 py-4 text-center'>
-      <h1 className='text-4xl font-bold border-b-2 border-BlueLight'>
+    <div className='flex flex-col items-center justify-center  text-center'>
+      <div className='bg-[url(../src/assets/contact-bg.jpg)] w-full h-[300px] bg-cover bg-center flex justify-center items-center'>
+<div className='flex flex-col justify-center items-center w-full h-full backdrop-blur-lg text-white'>
+<h1 className='text-5xl font-bold  font-customFontInter '>
         Contacto
       </h1>
-      <h3>Contactate con nosotros para darte un mejor asesoramiento</h3>
+      <h3 className='font-customFontRoboto'>Contactate con nosotros para darte un mejor asesoramiento</h3>
+
+</div>
+      
+      </div>
+      
+      
       <ContactContainerCards />
     </div>
   );
