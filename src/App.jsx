@@ -9,11 +9,15 @@ import { services } from './lib/data';
 import Services from './views/Services';
 import Footer from './components/Footer/Footer';
 import Contacto from './views/Contacto';
+import ButtonArrowUp from './components/Buttons/ButtonArrowUp';
+import ButtonWhatsApp from './components/Buttons/ButtonWhatsApp';
 
 function App() {
   return (
     <div className='font-customFontRoboto'>
       <NavBar />
+      <ButtonArrowUp />
+      <ButtonWhatsApp />
       <Routes>
         <Route path='*' element={<Home />} />
         <Route path='/' element={<Home />} />
