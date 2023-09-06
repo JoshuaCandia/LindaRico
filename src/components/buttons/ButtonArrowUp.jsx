@@ -31,7 +31,7 @@ const ButtonArrowUp = () => {
   return (
     <div
       className={`z-50 hidden md:flex bg-BlueSemiDark justify-center rounded-full h-8 w-8 fixed bottom-5 right-5 transition-opacity transform ${
-        showButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+        showButton ? 'opacity-100 ' : 'opacity-0 '
       } duration-300 ease-in-out`}
     >
       <Button
