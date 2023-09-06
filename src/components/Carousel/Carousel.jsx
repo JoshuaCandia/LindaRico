@@ -37,9 +37,9 @@ const CarouselHeader = () => {
             <Typography
               variant='h1'
               color='white'
-              className='mb-4 text-5xl md:text-4xl lg:text-5xl'
+              className='font-customFontInter mb-4 text-5xl md:text-4xl lg:text-5xl'
             >
-              Linda Rico & Asoc.
+              ALR Consultora.
             </Typography>
             <Typography
               variant='lead'
@@ -70,9 +70,9 @@ const CarouselHeader = () => {
             <Typography
               variant='h1'
               color='white'
-              className='mb-4 text-5xl md:text-4xl lg:text-5xl'
+              className='font-customFontInter mb-4 text-5xl md:text-4xl lg:text-5xl'
             >
-              Linda Rico & Asoc.
+              ALR Consultora.
             </Typography>
             <Typography
               variant='lead'

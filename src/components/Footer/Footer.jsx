@@ -3,10 +3,12 @@ import { SiCountingworkspro } from 'react-icons/si';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import { useLocation } from 'react-router-dom';
 
+
 const Footer = () => {
   const location = useLocation();
   return (
     <footer className='flex flex-col'>
+
       <section
         className={`bg-red-400 flex flex-col justify-center items-center gap-7 bg-[url("../src/assets/contact-bg.jpg")] bg-cover  xl:bg-center ${
           location.pathname === '/contacto'
@@ -46,6 +48,7 @@ const Footer = () => {
           Copyright © 2023-All Rights Reserved.
         </p>
         <p className='text-white text-sm'>ALR - Seguridad e Higiene</p>
+
       </section>
     </footer>
   );

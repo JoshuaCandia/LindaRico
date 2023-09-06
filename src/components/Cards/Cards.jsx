@@ -16,7 +16,7 @@ const Cards = ({ url, img, title, subTitle }) => {
         <Image
           removeWrapper
           alt='Card background'
-          className='filter transition-all grayscale hover:grayscale-0 z-0 w-full h-full object-cover'
+          className='filter transition-all brightness-75 lg:grayscale lg:hover:grayscale-0 z-0 w-full h-full object-cover'
           src={img}
         />
       </Card>

@@ -11,7 +11,7 @@ const ServicesPages = ({ title, image, description, services }) => {
           backgroundImage: `url(${image})`,
         }}
       >
-        <h1 className='text-3xl font-bold text-white font-customFontInter'>
+        <h1 className='font-customFontInter text-3xl font-bold text-white'>
           {title}
         </h1>
         <ButtonContact />
