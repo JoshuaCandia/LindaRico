@@ -33,7 +33,7 @@ const NavBar = () => {
         <NavbarBrand>
           <div className='flex items-center gap-2'>
             <SiCountingworkspro className='text-[27px]' />
-            <p className='font-bold text-[24px]'>Linda Rico</p>
+            <p className='font-bold text-[24px]'>ALR</p>
           </div>
         </NavbarBrand>
       </NavbarContent>
@@ -43,11 +43,11 @@ const NavBar = () => {
         <NavbarBrand>
           <div className='flex items-center gap-4'>
             <SiCountingworkspro className='text-[32px]' />
-            <p className='font-bold text-[32px]'>Linda Rico</p>
+            <p className='font-bold text-[32px]'>ALR</p>
           </div>
         </NavbarBrand>
         <NavbarItem>
-          <Link color='foreground' href='/' className='text-[24px]'>
+          <Link color='foreground' href='/' className='text-[24px] sm:mr-4'>
             Inicio
           </Link>
         </NavbarItem>

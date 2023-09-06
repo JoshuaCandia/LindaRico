@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 const DropDownNav = () => {
   return (
-    <Dropdown>
+    <Dropdown >
       <NavbarItem>
         <DropdownTrigger>
           <Button
@@ -30,7 +30,7 @@ const DropDownNav = () => {
       </NavbarItem>
       <DropdownMenu
         aria-label='ACME features'
-        className=' bg-white border-gray-400 border-2 text-[22px] rounded-lg'
+        className=' bg-BlueLight text-white text-[22px] rounded-lg'
         itemClasses={{
           base: 'gap-4',
         }}
