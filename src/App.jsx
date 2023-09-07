@@ -24,7 +24,7 @@ function App() {
         {services.map((service) => (
           <Route
             key={service.id}
-            path={`/servicios${service.url}`}
+            path={`/${service.url}`}
             element={
               <Services
                 title={service.title}

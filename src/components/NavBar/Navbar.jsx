@@ -4,11 +4,11 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
 } from '@nextui-org/react'
+import { Link } from 'react-router-dom'
 
 import { BiHomeAlt2 } from 'react-icons/bi'
 import { RiContactsLine } from 'react-icons/ri'
@@ -47,7 +47,7 @@ const NavBar = () => {
           </div>
         </NavbarBrand>
         <NavbarItem>
-          <Link color='foreground' href='/' className='text-[24px] sm:mr-4'>
+          <Link color='foreground' to='/' className='text-[24px] sm:mr-4'>
             Inicio
           </Link>
         </NavbarItem>
@@ -55,7 +55,7 @@ const NavBar = () => {
           <DropDownNav />
         </NavbarItem>
         <NavbarItem>
-          <Link color='foreground' href='/contacto' className='text-[24px]'>
+          <Link color='foreground' to='/contacto' className='text-[24px]'>
             Contacto
           </Link>
         </NavbarItem>

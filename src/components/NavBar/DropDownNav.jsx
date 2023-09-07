@@ -37,7 +37,7 @@ const DropDownNav = () => {
       >
         {services.map((service) => (
           <DropdownItem key={service.id} textValue={service.title}>
-            <Link to={`/servicios${service.url}`}>{service.title}</Link>
+            <Link to={`${service.url}`}>{service.title}</Link>
           </DropdownItem>
         ))}
       </DropdownMenu>
