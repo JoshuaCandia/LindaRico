@@ -19,6 +19,8 @@ const CarouselHeader = () => {
   return (
     <Carousel
       autoplay='true'
+      nextArrow=''
+      prevArrow=''
       autoplayDelay={5000}
       loop='true'
       navigation={false}

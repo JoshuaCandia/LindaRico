@@ -41,10 +41,12 @@ const NavBar = () => {
       {/* NAVBAR PC */}
       <NavbarContent className='hidden gap-4 sm:flex ' justify='start'>
         <NavbarBrand>
-          <div className='flex items-center gap-4'>
-            <SiCountingworkspro className='text-[32px]' />
-            <p className='font-bold text-[32px]'>ALR</p>
-          </div>
+          <Link to='/'>
+            <div className='flex items-center gap-4'>
+              <SiCountingworkspro className='text-[32px]' />
+              <p className='font-bold text-[32px]'>ALR</p>
+            </div>
+          </Link>
         </NavbarBrand>
         <NavbarItem>
           <Link color='foreground' to='/' className='text-[24px] sm:mr-4'>
