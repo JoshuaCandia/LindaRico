@@ -28,7 +28,11 @@ const ContactContainerCards = () => {
           </div>
         </article>
       </a>
-      <a href='https://wa.me/1134888325' target='_blank'>
+      <a
+        rel='noreferrer'
+        href='https://api.whatsapp.com/send?phone=+5491134888325&text=Hola, tengo una consulta.'
+        target='_blank'
+      >
         <article className='w-[300px] h-[300px] bg-white rounded-lg border border-gray-200 shadow-md duration-300 xl:hover:scale-105 cursor-pointer'>
           <div className='flex flex-col items-center justify-center gap-8 h-full'>
             <figure className='flex items-center justify-center bg-green-400 w-16 h-16 rounded-full'>
