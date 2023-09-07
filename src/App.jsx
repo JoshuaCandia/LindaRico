@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer'
 import Contacto from './views/Contacto'
 import ButtonArrowUp from './components/Buttons/ButtonArrowUp'
 import ButtonWhatsApp from './components/Buttons/ButtonWhatsApp'
-
+console.log(services[0].imgService)
 function App() {
   return (
     <div className='font-customFontRoboto '>

@@ -3,7 +3,6 @@ import { Card, CardHeader, Image } from '@nextui-org/react'
 import { Link } from 'react-router-dom'
 
 const Cards = ({ url, img, title, subTitle }) => {
-  console.log(url)
   return (
     <Link to={url}>
       <Card className='rounded-md col-span-12 sm:col-span-4 h-[250px]'>
