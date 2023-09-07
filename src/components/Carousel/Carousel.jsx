@@ -1,5 +1,5 @@
 //components
-import ButtonArrowDown from '../Buttons/ButtonArrowDown.jsx'
+import ButtonArrowDown from '../Buttons/ButtonArrowDown'
 //hooks
 import { Carousel, Typography, Button } from '@material-tailwind/react'
 //assets
