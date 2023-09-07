@@ -3,9 +3,11 @@ import { useNavigate } from 'react-router-dom'
 const Slogan = () => {
   const navigate = useNavigate()
   return (
-    <div className='pt-8 bg-BlueSemiLight text-white py-8 flex flex-col items-center'>
+    <div className='py-8 md:py-24 bg-BlueSemiLight text-white gap-6 flex flex-col items-center'>
       <div>
-        <h3 className='text-2xl font-bold '>Tu Seguridad, Nuestra Prioridad</h3>
+        <h3 className='text-2xl md:text-3xl  font-bold '>
+          Tu Seguridad, Nuestra Prioridad
+        </h3>
       </div>
       <div className='text-white/80 text-lg flex flex-col text-center gap-4 py-4 px-2'>
         <p>
