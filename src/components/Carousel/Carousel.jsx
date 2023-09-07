@@ -54,7 +54,7 @@ const CarouselHeader = () => {
               </Button>
             </div>
           </div>
-          <div className='w-full flex justify-center'>
+          <div className='w-full flex justify-center pb-8 md:pb-0'>
             <ButtonArrowDown />
           </div>
         </div>
@@ -89,7 +89,7 @@ const CarouselHeader = () => {
               </Button>
             </div>
           </div>
-          <div className='w-full flex justify-center'>
+          <div className='w-full flex justify-center pb-8 md:pb-0'>
             <ButtonArrowDown />
           </div>
         </div>
