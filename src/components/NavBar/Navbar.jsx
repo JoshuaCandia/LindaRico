@@ -20,7 +20,7 @@ const NavBar = () => {
   return (
     <Navbar
       disableAnimation
-      className='bg-white border-none sm:h-[100px]'
+      className='bg-white border-noneh-[10vh]'
       isBlurred={false}
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
