@@ -19,8 +19,6 @@ const CarouselHeader = () => {
   return (
     <Carousel
       autoplay='true'
-      nextArrow=''
-      prevArrow=''
       autoplayDelay={5000}
       loop='true'
       navigation={false}
@@ -33,7 +31,7 @@ const CarouselHeader = () => {
           className='h-full w-full object-cover'
         />
         <div className='absolute inset-0 grid h-full w-full items-end bg-black/75'>
-          <div className='w-full pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32'>
+          <div className='text-center w-full p-4 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32'>
             <Typography
               variant='h1'
               color='white'
@@ -48,7 +46,7 @@ const CarouselHeader = () => {
             >
               Expertos en Seguridad e Higiene
             </Typography>
-            <div className='flex gap-2'>
+            <div className='flex gap-2 justify-center md:justify-start'>
               <Button onClick={() => smooth()} size='md' color='white'>
                 Servicios
               </Button>
@@ -66,7 +64,7 @@ const CarouselHeader = () => {
           className='h-full w-full object-cover'
         />
         <div className='absolute inset-0 grid h-full w-full items-end bg-black/75'>
-          <div className='w-full pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32'>
+          <div className='text-center w-full p-4 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32'>
             <Typography
               variant='h1'
               color='white'
@@ -83,7 +81,7 @@ const CarouselHeader = () => {
                 Expertos en Seguridad e Higiene
               </div>
             </Typography>
-            <div className='flex gap-2'>
+            <div className='flex gap-2 justify-center md:justify-start'>
               <Button onClick={() => smooth()} size='md' color='white'>
                 Servicios
               </Button>
