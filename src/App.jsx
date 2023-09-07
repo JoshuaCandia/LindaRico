@@ -1,25 +1,53 @@
 //styles
 import './App.css'
 //hooks
-import { Routes, Route } from 'react-router-dom'
-//views
-import Home from './views/Home'
-import NavBar from './components/NavBar/Navbar'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { services } from './lib/data'
+//components
+import NavBar from './components/NavBar/Navbar'
+import ButtonArrowUp from './components/Buttons/ButtonArrowUp'
+import ButtonWhatsApp from './components/Buttons/ButtonWhatsApp'
+//views
+import Error404 from './views/404'
+import Home from './views/Home'
 import Services from './views/Services'
 import Footer from './components/Footer/Footer'
 import Contacto from './views/Contacto'
-import ButtonArrowUp from './components/Buttons/ButtonArrowUp'
-import ButtonWhatsApp from './components/Buttons/ButtonWhatsApp'
-console.log(services[0].imgService)
+
 function App() {
+  const location = useLocation()
   return (
     <div className='font-customFontRoboto '>
-      <NavBar />
-      <ButtonArrowUp />
-      <ButtonWhatsApp />
+      {location.pathname === '/' && (
+        <>
+          <NavBar />
+          <ButtonArrowUp />
+          <ButtonWhatsApp />
+        </>
+      )}
+      {location.pathname === '/area-medio-ambiente' && (
+        <>
+          <NavBar />
+          <ButtonArrowUp />
+          <ButtonWhatsApp />
+        </>
+      )}
+      {location.pathname === '/higiene-y-seguridad' && (
+        <>
+          <NavBar />
+          <ButtonArrowUp />
+          <ButtonWhatsApp />
+        </>
+      )}
+      {location.pathname === '/contacto' && (
+        <>
+          <NavBar />
+          <ButtonArrowUp />
+          <ButtonWhatsApp />
+        </>
+      )}
       <Routes>
-        <Route path='*' element={<Home />} />
+        <Route path='*' element={<Error404 />} />
         <Route path='/' element={<Home />} />
         {services.map((service) => (
           <Route
@@ -37,7 +65,10 @@ function App() {
         ))}
         <Route path='/contacto' element={<Contacto />} />
       </Routes>
-      <Footer />
+      {location.pathname === '/' && <Footer />}
+      {location.pathname === '/higiene-y-seguridad' && <Footer />}
+      {location.pathname === '/area-medio-ambiente' && <Footer />}
+      {location.pathname === '/contacto' && <Footer />}
     </div>
   )
 }
