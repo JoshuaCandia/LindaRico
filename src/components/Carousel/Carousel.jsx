@@ -19,10 +19,8 @@ const CarouselHeader = () => {
   return (
     <Carousel
       autoplay='true'
-      autoplayDelay={4500}
+      autoplayDelay={5000}
       loop='true'
-      prevArrow=''
-      nextArrow=''
       navigation={false}
       className=''
     >

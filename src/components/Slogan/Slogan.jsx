@@ -22,7 +22,7 @@ const Slogan = () => {
         </p>
       </div>
       <Button
-        onClick={() => navigate('/servicios/higiene-y-seguridad')}
+        onClick={() => navigate('/higiene-y-seguridad')}
         className='text-black rounded-md bg-white p-2 mt-4'
       >
         Conocer más
