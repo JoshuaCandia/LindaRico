@@ -1,6 +1,6 @@
 //assets
 import protector from '../assets/higiene-seguridad.jpg'
-import medioAmbiente from '../assets/mundo.jpg'
+import medioAmbiente from '../assets/enviroment.webp'
 
 export const services = [
   {
