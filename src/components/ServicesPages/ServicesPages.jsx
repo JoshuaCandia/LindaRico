@@ -1,4 +1,4 @@
-import ButtonContact from '../buttons/ButtonContact'
+import ButtonContact from '../Buttons/ButtonContact'
 import { BiCheck } from 'react-icons/bi'
 
 const ServicesPages = ({ title, image, description, services }) => {

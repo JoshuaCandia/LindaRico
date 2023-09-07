@@ -1,4 +1,4 @@
-import ButtonContact from '../buttons/ButtonContact'
+import ButtonContact from '../Buttons/ButtonContact'
 const HeaderServices = () => {
   return (
     <section className=" flex flex-col gap-7 justify-center items-center bg-[url('../../src/assets/mujer-notebook.jpg')]  bg-[length:900px] bg-fixed bg-no-repeat h-[400px]">

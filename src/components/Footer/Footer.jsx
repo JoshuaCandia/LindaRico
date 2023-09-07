@@ -1,4 +1,4 @@
-import ButtonContact from '../buttons/ButtonContact'
+import ButtonContact from '../Buttons/ButtonContact'
 import { SiCountingworkspro } from 'react-icons/si'
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import { useLocation } from 'react-router-dom'
