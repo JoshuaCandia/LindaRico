@@ -31,7 +31,7 @@ const Footer = () => {
             <ButtonContact />
           </div>
         ) : (
-          <div className='flex justify-center items-center h-full backdrop-blur-2xl w-full text-white'>
+          <div className='flex justify-center items-center h-full backdrop-blur-sm brightness-75 w-full text-white'>
             <h3 className='font-customFontRoboto text-xl xl:text-3xl'>
               <SiCountingworkspro className='  text-[70px] ' />
             </h3>

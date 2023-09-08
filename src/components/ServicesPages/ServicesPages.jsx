@@ -27,7 +27,9 @@ const ServicesPages = ({ title, image, description, services }) => {
       {/* LISTAS CON LOS SERVICIOS */}
       <section className='bg-BlueSemiLight mt-7 text-white flex justify-center  '>
         <article className='p-7 font-light flex flex-col justify-center items-center '>
-          <h2 className='text-4xl mb-7 font-customFontInter'>Servicios</h2>
+          <h2 className='text-4xl mb-7 font-medium font-customFontInter'>
+            Servicios
+          </h2>
           <div className='flex flex-col  xl:flex-row xl:gap-7 xl:p-7'>
             <ul className='flex flex-col mb-4  fonts-customFontRoboto gap-7  xl:text-md '>
               {services.map((service) =>
@@ -37,7 +39,7 @@ const ServicesPages = ({ title, image, description, services }) => {
                       <div>
                         <BiCheck className='text-3xl' />
                       </div>
-                      <p>{service.msg}</p>
+                      <p className='font-semibold'>{service.msg}</p>
                     </div>
                   </li>
                 ) : null,
