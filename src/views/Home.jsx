@@ -33,7 +33,7 @@ const Home = () => {
               id='servicios'
               className='my-14  flex flex-col justify-center items-center'
             >
-              <h3 className='font-customFontInter text-2xl p-4 font-bold'>
+              <h3 className='font-customFontInter text-2xl md:text-3xl p-4 font-bold'>
                 Servicios Destacados
               </h3>
               <ContainerCards />
