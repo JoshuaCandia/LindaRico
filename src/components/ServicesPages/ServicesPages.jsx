@@ -65,34 +65,9 @@ const ServicesPages = ({ title, image, description, services }) => {
         </article>
       </section>
 
-      {/* IMAGEN DE DICHO SERVICIO / DECORACION */}
-      <div
-        className={` h-[300px] bg-[length:500px]  w-full bg-no-repeat   flex flex-col justify-center items-center gap-7 sm:bg-[length:100%]  xl:h-[400px] xl:bg-center `}
-        style={{
-          backgroundImage: `url(${image})`,
-        }}
-      ></div>
-
       {/* DE QUE TRATA EL SERVICIO */}
-      <section className='flex justify-center bg-gradient-to-r from-BlueLight to-BlueSemiDark text-white'>
-        <article className='p-7 font-light flex flex-col justify-center items-center xl:w-[900px]'>
-          <h2 className='text-4xl mb-7 font-customFontInter'>
-            ¿De qué trata el servicio de abono mensual?
-          </h2>
-
-          <p className='fonts-customFontRoboto  xl:text-xl'>
-            El Servicio de Higiene y Seguridad en el Trabajo tiene como misión
-            fundamental implementar la política fijada por la empresa en la
-            materia, tendiente a determinar, promover y mantener adecuadas
-            condiciones ambientales con el fin de mantener altos estándares de
-            salud y seguridad en los lugares de trabajo, para poder prevenir con
-            el desarrollo de accidentes y enfermedades profesionales, entre
-            otros. Asimismo registrar las acciones y el desarrollo de los planes
-            ejecutadas por este, tendientes a cumplir con dicha política. Para
-            cumplimentar con lo anteriormente mencionado, desarrollaremos planes
-            de gestión para cumplir con las siguientes tareas:
-          </p>
-        </article>
+      <section className='h-[80vh] flex justify-center items-center'>
+        <h5>Carousel de Imagenes</h5>
       </section>
     </main>
   )

@@ -8,14 +8,14 @@ const Footer = () => {
   return (
     <footer className='flex flex-col'>
       <section
-        className={`bg-red-400 flex flex-col justify-center items-center gap-7 bg-[url("../src/assets/contact-bg.jpg")] bg-cover  xl:bg-center ${
+        className={`flex flex-col justify-center items-center gap-7 bg-[url("../src/assets/contact-bg.jpg")] bg-cover xl:bg-center ${
           location.pathname === '/contacto'
             ? 'lg:h-[162px] h-[200px]'
             : 'h-[60vh] xl:h-[400px]'
         }`}
       >
         {location.pathname !== '/contacto' ? (
-          <div className='flex flex-col justify-center items-center gap-7 p-7 h-full backdrop-blur-md w-full text-white'>
+          <div className='flex flex-col justify-center items-center gap-7 p-7 h-full backdrop-blur-sm w-full text-white'>
             <div className='flex items-center gap-2 '>
               <SiCountingworkspro className='text-[27px]' />
               <p className='font-bold text-[24px]'>ALR</p>
@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             <div className='flex items-center gap-2 '>
               <AiOutlinePhone className='text-[27px]' />
-              <p className='font-bold text-[24px]'>(+549) 11 3488 8325</p>
+              <p className='font-bold text-[24px]'>(+54) 11 3488 8325</p>
             </div>
             <ButtonContact />
           </div>
