@@ -69,7 +69,7 @@ const ServicesPages = ({ title, image, description, services }) => {
 
       {/* DE QUE TRATA EL SERVICIO */}
       <section className='h-[80vh] flex justify-center items-center'>
-        <h5>Carousel de Imagenes</h5>
+        <h5>Carousel de Imagenes acá</h5>
       </section>
     </main>
   )
