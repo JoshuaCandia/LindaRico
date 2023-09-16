@@ -66,14 +66,15 @@ const NavBar = () => {
       {/* NAVBAR MOBILE */}
       <NavbarMenu className='bg-white h-36 '>
         <NavbarMenuItem className='flex flex-col gap-2'>
-          <Link className='w-full text-[22px]' href='/' size='lg'>
+          <Link className='w-full text-[22px]' to='/' size='lg'>
             <div className='flex items-center gap-4'>
               <BiHomeAlt2 />
+
               <p>Inicio</p>
             </div>
           </Link>
           <DropDownNav />
-          <Link className='w-full text-[22px]' href='/contacto' size='lg'>
+          <Link className='w-full text-[22px]' to='/contacto' size='lg'>
             <div className='flex items-center gap-4'>
               <RiContactsLine />
               <p>Contacto</p>
