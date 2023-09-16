@@ -5,8 +5,12 @@ import Slogan from '../components/Slogan/Slogan'
 //hooks
 import { InView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   return (
     <div className=' scroll-smooth'>
       <Header />

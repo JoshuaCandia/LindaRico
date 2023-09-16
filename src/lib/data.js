@@ -1,13 +1,15 @@
 //assets
 import protector from '../assets/higiene-seguridad.jpg'
 import medioAmbiente from '../assets/enviroment.webp'
+//viewsBg
+import higiene from '../assets/higiene-bg.webp'
 
 export const services = [
   {
     id: 1,
     url: '/higiene-y-seguridad',
     img: protector,
-    imgService: protector,
+    imgService: higiene,
     title: 'Higiene y Seguridad',
     description:
       '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?',

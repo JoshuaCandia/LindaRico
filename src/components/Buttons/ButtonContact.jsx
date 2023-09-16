@@ -4,7 +4,7 @@ const ButtonContact = () => {
   return (
     <button
       onClick={() => navigate('/contacto')}
-      className='bg-blue-700 p-4 rounded-xl text-white font-semibold'
+      className='bg-orange-400 p-4 rounded-xl text-white font-semibold'
     >
       Contactanos
     </button>

@@ -1,14 +1,21 @@
+import { useEffect } from 'react'
 import ButtonContact from '../Buttons/ButtonContact'
 import { BiCheck } from 'react-icons/bi'
+import { CarouselDefault } from '../Carousel/CarouselServices'
 
 const ServicesPages = ({ title, image, description, services }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   return (
     <main>
       {/* IMAGEN MAIN DE LA PAGINA */}
       <div
-        className={` h-[300px] bg-[length:600px] w-full bg-no-repeat bg-fixed  flex flex-col justify-center items-center gap-7 sm:bg-[length:100%] xl:bg-[length:100%]  xl:h-[400px] `}
+        className={`h-[300px] bg-[length:600px] w-full bg-no-repeat bg-fixed flex flex-col justify-center items-center gap-7 sm:bg-[length:100%] xl:bg-[length:100%] xl:h-[400px]`}
         style={{
-          backgroundImage: `url(${image})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       >
         <h1 className='font-customFontInter text-3xl font-bold text-white'>
@@ -69,7 +76,7 @@ const ServicesPages = ({ title, image, description, services }) => {
 
       {/* DE QUE TRATA EL SERVICIO */}
       <section className='h-[80vh] flex justify-center items-center'>
-        <h5>Carousel de Imagenes acá</h5>
+        <CarouselDefault />
       </section>
     </main>
   )

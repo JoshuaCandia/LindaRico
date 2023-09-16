@@ -1,6 +1,9 @@
 import ContactContainerCards from '../components/ContainerCards/ContactContainerCards'
-
+import { useEffect } from 'react'
 const Contacto = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   return (
     <div className='flex flex-col items-center justify-center  text-center'>
       <div className='bg-[url(../src/assets/contact-bg.jpg)] w-full h-[300px] bg-cover bg-center flex justify-center items-center'>

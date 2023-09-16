@@ -9,11 +9,11 @@ const tailwindConfig = {
   theme: {
     extend: {
       colors: {
-        BlueLight: "#00A6FB",
-        BlueSemiLight: "#0582CA",
-        BlueNormal: "#006494",
-        BlueSemiDark: "#003554",
-        BlueDark: "#051923",
+        BlueLight: "#FED7AA",
+        BlueSemiLight: "#FDBA74",
+        BlueNormal: "#FB923C",
+        BlueSemiDark: "#F97316",
+        BlueDark: "#EA580C",
       },
       fontFamily: {
         customFontInter: ["Inter", "sans"],

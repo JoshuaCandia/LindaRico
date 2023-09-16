@@ -7,7 +7,7 @@ const ContactContainerCards = () => {
       <a href='tel:+5491134888325'>
         <article className='w-[300px] h-[300px] bg-white rounded-lg border border-gray-200 shadow-md duration-300 xl:hover:scale-105 cursor-pointer '>
           <div className='flex flex-col items-center justify-center gap-8 h-full '>
-            <figure className='flex items-center justify-center bg-BlueLight w-16 h-16 rounded-full'>
+            <figure className='flex items-center justify-center bg-blue-400 w-16 h-16 rounded-full'>
               <BsFillTelephoneFill className='text-3xl text-white' />
             </figure>
 
