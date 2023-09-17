@@ -35,7 +35,7 @@ const Home = () => {
               animate={{ opacity: inView ? 1 : 0 }}
               transition={{ duration: 0.5 }}
               id='servicios'
-              className='my-14  flex flex-col justify-center items-center'
+              className='my-14flex flex-col justify-center items-center'
             >
               <h3 className='font-customFontInter text-2xl md:text-3xl p-4 font-bold'>
                 Servicios Destacados
