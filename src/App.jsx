@@ -13,7 +13,7 @@ import Home from './views/Home'
 import Services from './views/Services'
 import Footer from './components/Footer/Footer'
 import Contacto from './views/Contacto'
-
+//Higher order components
 function App() {
   const location = useLocation()
   return (
