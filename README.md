@@ -1,4 +1,7 @@
 Primer trabajo hecho como Freelancer, página creada con React y Tailwind para cliente.
+tecnologias :
+*React
+*Tailwind
 
 ![image](https://github.com/JoshuaCandia/LindaRico/assets/99448044/3f025ce9-f7be-494d-9a58-6cdaca1fec2e)
 
