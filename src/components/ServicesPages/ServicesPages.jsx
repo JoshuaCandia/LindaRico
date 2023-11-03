@@ -30,15 +30,19 @@ const ServicesPages = ({ title, image, description, services }) => {
           <p>{description}</p>
         </article>
       </section>
-
+      {/* CROUSEL SERVICIO */}
+      <section className='h-[70vh]  flex justify-center items-center'>
+        <CarouselDefault />
+      </section>
       {/* LISTAS CON LOS SERVICIOS */}
-      <section className='bg-BlueSemiLight mt-7 text-white flex justify-center  '>
+      <section className='bg-BlueSemiLight mt-7 flex justify-center  '>
         <article className='p-7 font-light flex flex-col justify-center items-center '>
-          <h2 className='text-4xl mb-7 font-medium font-customFontInter'>
+          <h2 className='text-4xl text-white mb-7 font-medium font-customFontInter'>
             Servicios
           </h2>
-          <div className='flex flex-col  xl:flex-row xl:gap-7 xl:p-7'>
-            <ul className='flex flex-col mb-4  fonts-customFontRoboto gap-7  xl:text-md '>
+
+          <div className='flex flex-col xl:flex-row xl:gap-7 xl:p-7'>
+            <ul className='flex flex-col mb-4 text-white/80 fonts-customFontRoboto gap-7  xl:text-md '>
               {services.map((service) =>
                 service.id <= 7 ? (
                   <li key={service.id}>
@@ -72,11 +76,6 @@ const ServicesPages = ({ title, image, description, services }) => {
             )}
           </div>
         </article>
-      </section>
-
-      {/* CROUSEL SERVICIO */}
-      <section className='h-screen flex justify-center items-center'>
-        <CarouselDefault />
       </section>
     </main>
   )
