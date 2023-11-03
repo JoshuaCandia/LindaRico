@@ -3,13 +3,13 @@ import { useNavigate } from 'react-router-dom'
 const Slogan = () => {
   const navigate = useNavigate()
   return (
-    <div className='py-8 md:py-24 bg-BlueSemiLight text-white gap-6 flex flex-col items-center'>
+    <div className='py-8 md:py-24 bg-BlueSemiLight gap-6 flex flex-col items-center'>
       <div>
-        <h3 className='text-2xl md:text-3xl  font-bold '>
+        <h3 className='text-2xl md:text-3xl font-bold text-white'>
           Tu Seguridad, Nuestra Prioridad
         </h3>
       </div>
-      <div className='text-white/80 text-lg flex flex-col text-center gap-4 py-4 px-2'>
+      <div className='text-white/90 text-lg flex flex-col text-center gap-4 py-4 px-2'>
         <p>
           Somos una consultora en Higiene y Seguridad y Medio Ambiente con años
           de experiencia, formada por un equipo multidisciplinario de
@@ -25,7 +25,7 @@ const Slogan = () => {
       </div>
       <Button
         onClick={() => navigate('/higiene-y-seguridad')}
-        className='text-black rounded-md bg-white p-2 mt-4'
+        className='bg-white rounded-md p-2 mt-4'
       >
         Conocer más
       </Button>

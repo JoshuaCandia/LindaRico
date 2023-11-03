@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom'
 const Footer = () => {
   const location = useLocation()
   return (
-    <footer className='flex flex-col'>
+    <footer className='flex flex-col text-white'>
       <section
         className={`flex flex-col justify-center items-center gap-7 bg-[url("../src/assets/contact-bg.jpg")] bg-cover xl:bg-center ${
           location.pathname === '/contacto'
