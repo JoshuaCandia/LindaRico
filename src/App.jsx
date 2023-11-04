@@ -1,19 +1,19 @@
-//styles
+// styles
 import './App.css'
-//hooks
+// hooks
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { services } from './lib/data'
-//components
+// components
 import NavBar from './components/NavBar/Navbar'
 import ButtonArrowUp from './components/Buttons/ButtonArrowUp'
 import ButtonWhatsApp from './components/Buttons/ButtonWhatsApp'
-//views
+// views
 import Error404 from './views/404'
 import Home from './views/Home'
 import Services from './views/Services'
 import Footer from './components/Footer/Footer'
 import Contacto from './views/Contacto'
-//Higher order component
+
 function App() {
   const location = useLocation()
   return (

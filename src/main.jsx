@@ -1,8 +1,8 @@
-//styles
+// styles
 import './index.css'
-//components
+// components
 import App from './App.jsx'
-//hooks
+// hooks
 import ReactDOM from 'react-dom/client'
 import React from 'react'
 import { NextUIProvider } from '@nextui-org/react'
