@@ -12,7 +12,7 @@ export const services = [
     imgService: higiene,
     title: 'Higiene y Seguridad',
     description:
-      '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?',
+      'Brindamos servicios integrales de Higiene y Seguridad Laboral para proteger a su personal y cumplir con todas las normativas vigentes. Nuestro equipo de profesionales especializados trabaja de manera personalizada con cada cliente, realizando evaluaciones exhaustivas de riesgos, implementando medidas preventivas y capacitando a su personal. Nos enfocamos en crear ambientes de trabajo seguros y saludables, reduciendo accidentes laborales y mejorando la productividad de su empresa. Cumplimos con la Ley 19.587 de Higiene y Seguridad en el Trabajo y el Decreto 351/79, garantizando que su empresa esté en regla con la ART y todos los organismos de control.',
     services: [
       {
         id: 1,
@@ -79,7 +79,7 @@ export const services = [
     imgService: medioAmbiente,
     title: 'Medio Ambiente',
     description:
-      '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aut error ex eius accusamus, eum modi rerum minus esse, eligendi a voluptates doloremque ad tempora? Ex rem aperiam earum aliquid?',
+      'Ofrecemos soluciones ambientales integrales para que su empresa opere de manera sustentable y en cumplimiento con la legislación ambiental vigente. Realizamos categorizaciones industriales, auditorías ambientales, gestión de residuos especiales y obtención de certificaciones como el CAA (Certificado de Aptitud Ambiental). Nuestro compromiso es ayudar a su empresa a minimizar el impacto ambiental, optimizar procesos y cumplir con las normativas de la Ley 11.459 y demás regulaciones provinciales y municipales. Trabajamos para que su empresa sea ambientalmente responsable, mejorando su imagen corporativa y contribuyendo al cuidado del planeta.',
     services: [
       {
         id: 1,

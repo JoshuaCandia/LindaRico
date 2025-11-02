@@ -1,81 +1,172 @@
-import { useEffect } from 'react'
-import ButtonContact from '../Buttons/ButtonContact'
+import { motion } from 'framer-motion'
 import { BiCheck } from 'react-icons/bi'
-import { CarouselDefault } from '../Carousel/CarouselServices'
+import { useNavigate } from 'react-router-dom'
+import ButtonContact from '../Buttons/ButtonContact'
+import WhyChooseUs from '../WhyChooseUs/WhyChooseUs'
 
 const ServicesPages = ({ title, image, description, services }) => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  })
+  const navigate = useNavigate()
+
+  // Dividir servicios en 2 columnas
+  const midPoint = Math.ceil(services.length / 2)
+  const firstColumn = services.slice(0, midPoint)
+  const secondColumn = services.slice(midPoint)
+
   return (
-    <main>
-      {/* IMAGEN MAIN DE LA PAGINA */}
-      <div
-        className={`h-[300px] bg-[length:600px] w-full bg-no-repeat bg-fixed flex flex-col justify-center items-center gap-7 sm:bg-[length:100%] xl:bg-[length:100%] xl:h-[400px]`}
+    <main className='min-h-screen'>
+      {/* Hero Section con imagen de fondo */}
+      <motion.div
+        className='relative h-[400px] w-full bg-cover bg-center flex flex-col justify-center items-center'
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${image})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${image})`,
         }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
       >
-        <h1 className='font-customFontInter text-3xl font-bold text-white'>
+        <motion.h1
+          className='font-customFontInter text-4xl md:text-5xl font-bold text-white mb-6 text-center px-4'
+          initial={{ y: -30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
           {title}
-        </h1>
-        <ButtonContact />
-      </div>
+        </motion.h1>
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+        >
+          <ButtonContact />
+        </motion.div>
+      </motion.div>
 
-      {/* UN POCO DE DESCRIPCION  */}
-      <section className='xl:flex xl:justify-center'>
-        <article className='px-7 p-24 font-light xl:w-[900px] xl:text-xl fonts-customFontRoboto '>
-          <p>{description}</p>
-        </article>
+      {/* Sección de descripción */}
+      <section className='bg-white py-16 md:py-20'>
+        <div className='container mx-auto px-6 md:px-12 max-w-5xl'>
+          <motion.article
+            className='text-gray-700 text-lg md:text-xl leading-relaxed font-light'
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className='mb-6'>{description}</p>
+            <div className='mt-8 flex justify-center'>
+              <motion.button
+                onClick={() => navigate('/contacto')}
+                className='px-8 py-3 bg-gradient-to-r from-BlueNormal to-BlueSemiLight text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300'
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Solicitar Cotización
+              </motion.button>
+            </div>
+          </motion.article>
+        </div>
       </section>
-      {/* CROUSEL SERVICIO */}
-      <section className='h-[70vh]  flex justify-center items-center'>
-        <CarouselDefault />
-      </section>
-      {/* LISTAS CON LOS SERVICIOS */}
-      <section className='bg-BlueSemiLight mt-7 flex justify-center  '>
-        <article className='p-7 font-light flex flex-col justify-center items-center '>
-          <h2 className='text-4xl text-white mb-7 font-medium font-customFontInter'>
-            Servicios
-          </h2>
 
-          <div className='flex flex-col xl:flex-row xl:gap-7 xl:p-7'>
-            <ul className='flex flex-col mb-4 text-white/80 fonts-customFontRoboto gap-7  xl:text-md '>
-              {services.map((service) =>
-                service.id <= 7 ? (
-                  <li key={service.id}>
-                    <div className='flex gap-4 items-center'>
-                      <div>
-                        <BiCheck className='text-3xl' />
-                      </div>
-                      <p className='font-semibold'>{service.msg}</p>
+      {/* Sección "Por qué elegirnos" */}
+      <WhyChooseUs />
+
+      {/* Sección de lista de servicios - MEJORADA con 2 columnas */}
+      <section className='bg-gradient-to-br from-BlueSemiLight to-BlueNormal py-16 md:py-20'>
+        <div className='container mx-auto px-6 md:px-12'>
+          <motion.h2
+            className='text-4xl md:text-5xl text-white text-center mb-4 font-bold font-customFontInter'
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            Nuestros Servicios
+          </motion.h2>
+          
+          <motion.p
+            className='text-white/80 text-center mb-12 max-w-2xl mx-auto'
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            Soluciones completas y profesionales para tu empresa
+          </motion.p>
+
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto'>
+            {/* Primera columna */}
+            <motion.div
+              className='space-y-4'
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              {firstColumn.map((service) => (
+                <motion.div
+                  key={service.id}
+                  className='flex gap-4 items-start bg-white/10 backdrop-blur-sm p-4 rounded-xl hover:bg-white/20 transition-all duration-300 group'
+                  whileHover={{ x: 5 }}
+                >
+                  <div className='flex-shrink-0 mt-1'>
+                    <div className='bg-white rounded-full p-1.5 shadow-lg group-hover:scale-110 transition-transform duration-200'>
+                      <BiCheck className='text-xl text-BlueNormal' />
                     </div>
-                  </li>
-                ) : null,
-              )}
-            </ul>
+                  </div>
+                  <p className='font-medium text-white text-sm md:text-base leading-relaxed'>
+                    {service.msg}
+                  </p>
+                </motion.div>
+              ))}
+            </motion.div>
 
-            {services.length > 7 && (
-              <ul className='flex flex-col mb-4 items-start fonts-customFontRoboto gap-7 xl:text-md '>
-                {services.map((service) =>
-                  service.id <= 7 ? (
-                    <li key={service.id}>
-                      <div className='flex gap-4 items-center'>
-                        <div>
-                          <BiCheck className=' text-3xl' />
-                        </div>
-
-                        <p>{service.msg}</p>
-                      </div>
-                    </li>
-                  ) : null,
-                )}
-              </ul>
-            )}
+            {/* Segunda columna */}
+            <motion.div
+              className='space-y-4'
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              {secondColumn.map((service) => (
+                <motion.div
+                  key={service.id}
+                  className='flex gap-4 items-start bg-white/10 backdrop-blur-sm p-4 rounded-xl hover:bg-white/20 transition-all duration-300 group'
+                  whileHover={{ x: 5 }}
+                >
+                  <div className='flex-shrink-0 mt-1'>
+                    <div className='bg-white rounded-full p-1.5 shadow-lg group-hover:scale-110 transition-transform duration-200'>
+                      <BiCheck className='text-xl text-BlueNormal' />
+                    </div>
+                  </div>
+                  <p className='font-medium text-white text-sm md:text-base leading-relaxed'>
+                    {service.msg}
+                  </p>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
-        </article>
+
+          {/* CTA final */}
+          <motion.div
+            className='mt-16 text-center'
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <p className='text-white text-xl mb-6 font-light'>
+              ¿Necesitás más información?
+            </p>
+            <motion.button
+              onClick={() => navigate('/contacto')}
+              className='px-10 py-4 bg-white text-BlueNormal font-bold rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 text-lg'
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contactanos Ahora
+            </motion.button>
+          </motion.div>
+        </div>
       </section>
     </main>
   )

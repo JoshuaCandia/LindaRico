@@ -1,74 +1,79 @@
-// styles
-import './App.css'
-// hooks
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { services } from './lib/data'
-// components
+// Components
 import NavBar from './components/NavBar/Navbar'
 import ButtonArrowUp from './components/Buttons/ButtonArrowUp'
-import ButtonWhatsApp from './components/Buttons/ButtonWhatsApp'
-// views
+import FloatingWhatsAppButton from './components/Buttons/FloatingWhatsAppButton'
+import Footer from './components/Footer/Footer'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+// Views
 import Error404 from './views/404'
 import Home from './views/Home'
 import Services from './views/Services'
-import Footer from './components/Footer/Footer'
 import Contacto from './views/Contacto'
 
-function App() {
-  const location = useLocation()
+/**
+ * Layout wrapper component
+ * Handles common elements (navbar, buttons, footer) for all routes
+ */
+function LayoutWrapper({ children, showFooter = true }) {
   return (
-    <div className='font-customFontRoboto '>
-      {location.pathname === '/' && (
-        <>
-          <NavBar />
-          <ButtonArrowUp />
-          <ButtonWhatsApp />
-        </>
-      )}
-      {location.pathname === '/area-medio-ambiente' && (
-        <>
-          <NavBar />
-          <ButtonArrowUp />
-          <ButtonWhatsApp />
-        </>
-      )}
-      {location.pathname === '/higiene-y-seguridad' && (
-        <>
-          <NavBar />
-          <ButtonArrowUp />
-          <ButtonWhatsApp />
-        </>
-      )}
-      {location.pathname === '/contacto' && (
-        <>
-          <NavBar />
-          <ButtonArrowUp />
-          <ButtonWhatsApp />
-        </>
-      )}
+    <>
+      <NavBar />
+      <ButtonArrowUp />
+      <FloatingWhatsAppButton />
+      {children}
+      {showFooter && <Footer />}
+    </>
+  )
+}
+
+function App() {
+  return (
+    <div className='font-customFontRoboto'>
+      <ScrollToTop />
       <Routes>
+        {/* Página de error 404 - sin layout */}
         <Route path='*' element={<Error404 />} />
-        <Route path='/' element={<Home />} />
+
+        {/* Página principal */}
+        <Route
+          path='/'
+          element={
+            <LayoutWrapper>
+              <Home />
+            </LayoutWrapper>
+          }
+        />
+
+        {/* Páginas de servicios dinámicas */}
         {services.map((service) => (
           <Route
             key={service.id}
             path={`/${service.url}`}
             element={
-              <Services
-                title={service.title}
-                image={service.imgService}
-                description={service.description}
-                services={service.services}
-              />
+              <LayoutWrapper>
+                <Services
+                  title={service.title}
+                  image={service.imgService}
+                  description={service.description}
+                  services={service.services}
+                />
+              </LayoutWrapper>
             }
           />
         ))}
-        <Route path='/contacto' element={<Contacto />} />
+
+        {/* Página de contacto */}
+        <Route
+          path='/contacto'
+          element={
+            <LayoutWrapper>
+              <Contacto />
+            </LayoutWrapper>
+          }
+        />
       </Routes>
-      {location.pathname === '/' && <Footer />}
-      {location.pathname === '/higiene-y-seguridad' && <Footer />}
-      {location.pathname === '/area-medio-ambiente' && <Footer />}
-      {location.pathname === '/contacto' && <Footer />}
     </div>
   )
 }

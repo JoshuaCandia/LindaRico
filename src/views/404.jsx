@@ -1,67 +1,119 @@
 import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import SEOHead from '../components/SEO/SEOHead'
+
 const Error404 = () => {
   const navigate = useNavigate()
-  return (
-    <section className='bg-white dark:bg-gray-900 '>
-      <div className='container flex items-center min-h-screen px-6 py-12 mx-auto'>
-        <div className='flex flex-col items-center max-w-sm mx-auto text-center'>
-          <p className='p-3 text-sm font-medium text-blue-500 rounded-full bg-blue-50 dark:bg-gray-800'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              strokeWidth='2'
-              stroke='currentColor'
-              className='w-6 h-6'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z'
-              />
-            </svg>
-          </p>
-          <h1 className='mt-3 text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl'>
-            Página no encontrada
-          </h1>
-          <p className='mt-4 text-gray-500 dark:text-gray-400'>
-            <span> La página que estas buscando no existe</span>
-            <span> Acá te dejamos estos enlaces</span>
-          </p>
 
-          <div className='flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto'>
-            <button
-              onClick={() => window.history.back()}
-              className='flex items-center justify-center w-1/2 px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700'
+  return (
+    <>
+      <SEOHead
+        title='Página no encontrada | LR Consultora'
+        description='La página que buscas no existe'
+      />
+      <section className='bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen flex items-center justify-center'>
+        <div className='container flex items-center px-6 py-12 mx-auto'>
+          <motion.div
+            className='flex flex-col items-center max-w-lg mx-auto text-center'
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            {/* Icono de error */}
+            <motion.div
+              className='p-4 text-BlueNormal rounded-full bg-blue-50 shadow-lg'
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
             >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
-                strokeWidth='1.5'
+                strokeWidth='2'
                 stroke='currentColor'
-                className='w-5 h-5 rtl:rotate-180'
+                className='w-12 h-12'
               >
                 <path
                   strokeLinecap='round'
                   strokeLinejoin='round'
-                  d='M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18'
+                  d='M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z'
                 />
               </svg>
+            </motion.div>
 
-              <span>Volver Atrás</span>
-            </button>
-
-            <button
-              onClick={() => navigate('/')}
-              className='w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600'
+            {/* Título 404 */}
+            <motion.h1
+              className='mt-8 text-8xl font-bold text-BlueNormal'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
             >
-              Volver al Inicio
-            </button>
-          </div>
+              404
+            </motion.h1>
+
+            {/* Mensaje */}
+            <motion.h2
+              className='mt-4 text-3xl font-semibold text-gray-800'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              Página no encontrada
+            </motion.h2>
+
+            <motion.p
+              className='mt-4 text-gray-600 text-lg'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            >
+              Lo sentimos, la página que estás buscando no existe o fue movida.
+            </motion.p>
+
+            {/* Botones de acción */}
+            <motion.div
+              className='flex flex-col sm:flex-row items-center w-full mt-8 gap-4'
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+            >
+              <motion.button
+                onClick={() => window.history.back()}
+                className='flex items-center justify-center w-full sm:w-auto px-6 py-3 text-gray-700 bg-white border-2 border-gray-300 rounded-lg gap-2 hover:bg-gray-50 transition-all duration-300 shadow-md hover:shadow-lg'
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth='2'
+                  stroke='currentColor'
+                  className='w-5 h-5'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18'
+                  />
+                </svg>
+                <span className='font-semibold'>Volver Atrás</span>
+              </motion.button>
+
+              <motion.button
+                onClick={() => navigate('/')}
+                className='w-full sm:w-auto px-6 py-3 font-semibold text-white bg-gradient-to-r from-BlueNormal to-BlueSemiLight rounded-lg shadow-lg hover:shadow-xl transition-all duration-300'
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Ir al Inicio
+              </motion.button>
+            </motion.div>
+          </motion.div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
 
