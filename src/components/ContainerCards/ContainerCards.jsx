@@ -33,9 +33,9 @@ const ContainerCards = () => {
       whileInView='visible'
       viewport={{ once: true, amount: 0.2 }}
     >
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 px-4 md:px-0'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 px-4 md:px-0 auto-rows-fr'>
         {services.map((service) => (
-          <motion.div key={service.id} variants={itemVariants}>
+          <motion.div key={service.id} variants={itemVariants} className='h-full'>
             <Cards url={service.url} img={service.img} title={service.title} />
           </motion.div>
         ))}

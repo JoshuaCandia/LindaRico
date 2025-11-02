@@ -88,7 +88,7 @@ const WhyChooseUs = () => {
 
         {/* Grid de beneficios */}
         <motion.div
-          className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6'
+          className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 auto-rows-fr'
           variants={containerVariants}
           initial='hidden'
           whileInView='visible'
@@ -99,9 +99,9 @@ const WhyChooseUs = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -8, scale: 1.05 }}
-              className='relative group'
+              className='relative group h-full'
             >
-              <div className='bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full flex flex-col items-center text-center'>
+              <div className='bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full min-h-[200px] flex flex-col items-center justify-center text-center'>
                 {/* Icono con gradiente */}
                 <div
                   className={`bg-gradient-to-br ${benefit.color} text-white w-16 h-16 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}
